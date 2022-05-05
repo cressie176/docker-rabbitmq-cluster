@@ -1,10 +1,10 @@
-FROM lucifer8591/rabbitmq_base:3.7.17
+FROM lucifer8591/rabbitmq_base:3.8.27
 
 LABEL MAINTAINER="Kailash K Yogeshwar <kailashyogeshwar85@gmail.com>"
 LABEL build_date="03-09-2019"
-LABEL image="lucifer8591/rabbitmq-server:3.7.17"
+LABEL image="lucifer8591/rabbitmq-server:3.8.27"
 
-ENV RABBIT_BASEDIR="/rabbitmq/rabbitmq_server-3.7.17"
+ENV RABBIT_BASEDIR="/rabbitmq/rabbitmq_server-3.8.27"
 WORKDIR /rabbitmq/
 RUN apk add --no-cache procps # Refer https://github.com/docker-library/rabbitmq/issues/162
 
